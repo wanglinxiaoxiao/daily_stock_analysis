@@ -22,7 +22,9 @@ on:
         required: false
         default: false
         type: boolean
-
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  
 # 并发控制：同一时间只运行一个分析任务
 concurrency:
   group: stock-analysis
